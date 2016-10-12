@@ -1,0 +1,23 @@
+#include <iostream>
+#include <inttypes.h>
+
+int main(){
+  
+  int16_t months, weeks, days;
+  
+  std::cout<<"Enter months: ";
+  std::cin>>months;
+  
+  std::cout<<"Enter weeks: ";
+  std::cin>>weeks;
+  
+  std::cout<<"Enter days: ";
+  std::cin>>days;
+  
+  float years = months * 0.0834f;
+  years += weeks * 0.019f;
+  years += days * 0.003f;
+  
+  std::cout <<"The sum of all the months,weeks, and days are " <<years <<" (virtual) years .\n";
+  
+}
